@@ -1,0 +1,17 @@
+<project default="run">
+<description>
+TK1 - programming assignment 5
+--------------------------
+Group Members:
+Amit Bhanja
+Raghunath Deshpande
+Banashri Mandal
+</description>
+	<target name="run">
+		<parallel>
+			<ant antfile="../NTP-Project/build.xml" dir="../NTP-Project" target="TimeServer" inheritAll="false" />
+			<ant antfile="../NTP-Project/build.xml" dir="../NTP-Project" target="TimeClient" inheritAll="false" />
+		</parallel>
+	</target>
+</project>
+  
